@@ -1,7 +1,7 @@
 // src/pages/CartPage.jsx
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import CartContext from '../context/CartContext';
+import CartContext from '../context/CartSlice';
 import CartItem from '../components/CartItems';
 import Header from '../components/Header';
 import '../app.css';

@@ -1,6 +1,6 @@
 // src/components/PlantCard.jsx
 import { useContext } from 'react';
-import CartContext from '../context/CartContext';
+import CartContext from '../context/CartSlice';
 
 const PlantCard = ({ plant }) => {
   const { cartItems, addToCart } = useContext(CartContext);

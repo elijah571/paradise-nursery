@@ -1,6 +1,6 @@
 // src/components/CartItem.jsx
 import { useContext } from 'react';
-import CartContext from '../context/CartContext';
+import CartContext from '../context/CartSlice';
 import '../app.css';
 
 const CartItem = ({ item }) => {
