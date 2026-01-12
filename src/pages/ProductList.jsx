@@ -1,6 +1,6 @@
 import Header from '../components/Header';
 import PlantCard from '../components/PlantCard';
-import '../app.css';
+import '../App.css';
 
 // Add a category property to each plant
 const plants = [
