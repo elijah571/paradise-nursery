@@ -1,7 +1,7 @@
 // src/App.jsx
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
-import ProductPage from './pages/ProductPage';
+import ProductPage from './pages/ProductList';
 import CartPage from './pages/CartPage';
 import { CartProvider } from './context/CartSlice';
 import AboutPage from './pages/AboutPage';
