@@ -1,16 +1,163 @@
-# React + Vite
+Absolutely! Here’s a **professional `README.md`** for your **Paradise Nursery React project**. You can place this in your project root folder.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```markdown
+# Paradise Nursery - React Frontend
 
-Currently, two official plugins are available:
+![Paradise Nursery](./public/images/landing-bg.jpg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## React Compiler
+**Paradise Nursery** is a simple e-commerce frontend application built with **React**. It allows users to:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Browse a variety of houseplants
+- Add plants to a shopping cart
+- Adjust quantities of plants in the cart
+- View total items and total cost
+- Navigate between landing, product listing, and shopping cart pages
 
-## Expanding the ESLint configuration
+This project demonstrates React fundamentals, component-based architecture, state management using the **Context API**, and routing with **React Router v6**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+
+### Landing Page
+
+- Background image with overlay
+- Company name and description
+- **Get Started** button linking to product listing page
+
+### Product Listing Page
+
+- Display of **6+ houseplants**, organized in a clean grid
+- Plant details: name, price, thumbnail
+- **Add to Cart** button (disabled when already added)
+- Header with company logo and dynamic shopping cart icon
+
+### Shopping Cart Page
+
+- List of all plants added to cart with thumbnail, unit price, and subtotal
+- Quantity controls (increase/decrease)
+- Delete button to remove items
+- Cart summary displaying:
+  - Total items
+  - Total cost
+  - **Continue Shopping** button
+  - **Checkout** button
+
+---
+
+## Technologies Used
+
+- React 18
+- React Router v6
+- Context API for global state management
+- CSS for styling (with responsive design)
+- Vite for fast development and build
+- GitHub Pages for deployment
+
+---
+
+## Project Structure
+```
+
+paradise-nursery/
+├─ public/
+│ └─ images/ # Plant images and landing background
+├─ src/
+│ ├─ components/
+│ │ ├─ Header.jsx
+│ │ ├─ PlantCard.jsx
+│ │ └─ CartItem.jsx
+│ ├─ context/
+│ │ └─ CartContext.jsx
+│ ├─ pages/
+│ │ ├─ LandingPage.jsx
+│ │ ├─ ProductPage.jsx
+│ │ └─ CartPage.jsx
+│ ├─ App.jsx
+│ ├─ main.jsx
+│ └─ styles.css
+├─ package.json
+└─ vite.config.js
+
+````
+
+---
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/<your-username>/paradise-nursery.git
+cd paradise-nursery
+````
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the development server:
+
+```bash
+npm run dev
+```
+
+4. Open the app in your browser:
+
+```
+http://localhost:5173
+```
+
+---
+
+## Deployment
+
+This project can be deployed to **GitHub Pages**:
+
+1. Install `gh-pages`:
+
+```bash
+npm install gh-pages --save-dev
+```
+
+2. Add deployment scripts to `package.json`:
+
+```json
+"homepage": "https://<your-username>.github.io/paradise-nursery",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+```
+
+3. Deploy:
+
+```bash
+npm run deploy
+```
+
+---
+
+## Notes
+
+- All images are set to **uniform sizes** for a clean layout (`object-fit: cover`).
+- The shopping cart uses **React Context** for global state.
+- Product listing and cart pages are fully responsive.
+- Checkout button is a placeholder for future backend integration.
+
+---
+
+## License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+## Author
+
+**Elijah Peter**
+Frontend Developer | React Enthusiast
