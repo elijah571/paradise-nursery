@@ -3,12 +3,11 @@ import '../App.css';
 
 const LandingPage = () => {
   return (
-    <div className="landing-page">
+    <div className="background-image">
       <div className="overlay">
-        <h1>🌿 Paradise Nursery</h1>
+        <h1>Welcome to Paradise Nursery</h1>
         <p>
-          Welcome to Paradise Nursery! Discover a variety of houseplants to
-          beautify your home.
+          Discover a variety of beautiful plants to bring life into your home.
         </p>
         <Link to="/products" className="get-started-btn">
           Get Started

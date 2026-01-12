@@ -11,17 +11,31 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 /* =========================
    REQUIRED: Background Image
 ========================= */
 .background-image {
-  background-image: url('/images/landing-bg.jpg');
+  background-image: url('https://www.shutterstock.com/image-photo/nursery-plants-plots-green-nature-600w-1181619196.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Overlay for landing content */
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  max-width: 600px;
 }
 
 /* =========================
@@ -62,39 +76,44 @@ a {
 }
 
 /* =========================
-   Landing Page
+   Buttons
 ========================= */
-.landing-page {
-  background: url('/images/landing-bg.jpg') center/cover no-repeat;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.overlay {
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  text-align: center;
-  padding: 3rem 2rem;
-  border-radius: 12px;
-  max-width: 600px;
-}
-
-.get-started-btn {
+.get-started-btn,
+button {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
-  background-color: #fff;
-  color: #4caf50;
   font-weight: bold;
   border-radius: 8px;
+  border: none;
+  cursor: pointer;
   transition: all 0.3s ease;
+  text-align: center;
+}
+
+.get-started-btn {
+  background-color: #fff;
+  color: #4caf50;
 }
 
 .get-started-btn:hover {
   background-color: #f1f1f1;
   transform: translateY(-2px);
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+}
+
+button:hover:enabled {
+  background-color: #45a049;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
 
 /* =========================
@@ -109,15 +128,16 @@ a {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-.about-page h2 {
+.about-us-container h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.about-page p {
+.about-us-container p {
   font-size: 1.1rem;
   line-height: 1.6;
   color: #555;
+  margin-bottom: 0.75rem;
 }
 
 /* =========================
@@ -185,30 +205,6 @@ a {
   font-size: 0.95rem;
   color: #555;
   margin: 0.3rem 0;
-}
-
-/* =========================
-   Buttons
-========================= */
-button {
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 6px;
-  background-color: #4caf50;
-  color: white;
-  font-weight: bold;
-  transition: all 0.2s ease;
-}
-
-button:hover:enabled {
-  background-color: #45a049;
-  transform: translateY(-1px);
-}
-
-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
 }
 
 /* =========================
