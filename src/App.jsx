@@ -4,7 +4,7 @@ import LandingPage from './pages/LandingPage';
 import ProductPage from './pages/ProductList';
 import CartPage from './pages/CartPage';
 import { CartProvider } from './context/CartSlice';
-import AboutPage from './pages/AboutPage';
+import AboutPage from './pages/AboutUs';
 
 function App() {
   return (

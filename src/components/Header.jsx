@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import CartContext from '../context/CartSlice';
-import AboutPage from '../pages/AboutPage';
+import AboutPage from '../pages/AboutUs';
 
 const Header = () => {
   const { totalItems } = useContext(CartContext);

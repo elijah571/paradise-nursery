@@ -1,18 +1,13 @@
-// src/pages/CartPage.jsx
-import { useContext } from 'react';
-import { Link } from 'react-router-dom';
-import CartContext from '../context/CartSlice';
+import React, { useContext } from 'react';
 import CartItem from '../components/CartItems';
-import Header from '../components/Header';
-import '../app.css';
+import CartContext from '../context/CartSlice';
 
 const CartPage = () => {
-  const { cartItems, totalItems, totalCost } = useContext(CartContext);
+  const { cartItems, totalCost } = useContext(CartContext);
 
   return (
-    <div>
-      <Header />
-      <h2 className="page-title">Shopping Cart</h2>
+    <div className="cart-page">
+      <h1>Your Shopping Cart</h1>
       <div className="cart-grid">
         {cartItems.length === 0 ? (
           <p>Your cart is empty.</p>
@@ -22,12 +17,8 @@ const CartPage = () => {
       </div>
       {cartItems.length > 0 && (
         <div className="cart-summary">
-          <p>Total Items: {totalItems}</p>
-          <p>Total Cost: ${totalCost.toFixed(2)}</p>
-          <Link to="/products" className="btn">
-            Continue Shopping
-          </Link>
-          <button className="btn checkout-btn">Checkout</button>
+          <p>Total Amount: ${totalCost.toFixed(2)}</p>
+          <button className="checkout-btn">Checkout</button>
         </div>
       )}
     </div>
