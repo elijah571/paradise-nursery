@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import CartContext from '../context/CartContext';
+import AboutPage from '../pages/AboutPage';
 
 const Header = () => {
   const { totalItems } = useContext(CartContext);
@@ -11,6 +12,7 @@ const Header = () => {
       <Link to="/products" className="logo">
         🌿 Paradise Nursery
       </Link>
+      <Link to="/about">About Me</Link> {/* About link */}
       <nav>
         <Link to="/products">Products</Link>
         <Link to="/cart" className="cart-icon">
