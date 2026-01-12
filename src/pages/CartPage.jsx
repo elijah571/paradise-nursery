@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import CartContext from '../context/CartContext';
 import CartItem from '../components/CartItems';
 import Header from '../components/Header';
-import '../styles.css';
+import '../app.css';
 
 const CartPage = () => {
   const { cartItems, totalItems, totalCost } = useContext(CartContext);

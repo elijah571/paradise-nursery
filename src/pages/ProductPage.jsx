@@ -1,6 +1,6 @@
 import Header from '../components/Header';
 import PlantCard from '../components/PlantCard';
-import '../styles.css';
+import '../app.css';
 
 const plants = [
   {
